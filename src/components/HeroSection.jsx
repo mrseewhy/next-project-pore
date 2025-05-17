@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const images = [
   "/images/bg1.webp",
@@ -60,18 +61,18 @@ const HeroSection = () => {
           change in the fight against trafficking and abuse.
         </p>
         <div className="mt-8 flex justify-center gap-6">
-          <a
+          <Link
             href="/get-involved"
             className="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-3xl text-white font-semibold transition-all hover:-translate-y-1 font-head"
           >
             Get Involved
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="px-8 py-3 font-head border border-white hover:bg-white hover:text-black rounded-3xl text-white font-semibold transition-all hover:-translate-y-1"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </div>

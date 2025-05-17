@@ -24,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` ${firaSans.variable} ${lato.variable} antialiased`}>
+      <body className={`${firaSans.variable} ${lato.variable} antialiased`}>
         <Navbar />
         {children}
         <Footer />

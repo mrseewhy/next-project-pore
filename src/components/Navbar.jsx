@@ -28,7 +28,10 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="text-2xl font-bold font-head">
-            <Link href="/">Federico & Co.</Link>
+            <Link href="/" className="flex items-center justify-center gap-4">
+              <img src="/images/icon.webp" className="h-12 w-12" />
+              <span> Federico & Co.</span>
+            </Link>
           </div>
 
           {/* Desktop nav */}
