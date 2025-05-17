@@ -1,14 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Fira_Sans, Lato } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+const firaSans = Fira_Sans({
+  variable: "--font-fira-sans",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"], // specify multiple weights
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const lato = Lato({
+  variable: "--font-lato",
   subsets: ["latin"],
+  weight: ["300", "400", "700", "900"],
 });
 
 export const metadata = {
@@ -19,10 +24,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={` ${firaSans.variable} ${lato.variable} antialiased`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
