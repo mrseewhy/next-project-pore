@@ -90,7 +90,7 @@ export default function AboutPage() {
       <section className="container mx-auto px-4 py-16 flex flex-col-reverse md:flex-row items-center gap-12 max-w-6xl">
         <div className="md:w-1/2">
           <img
-            src="/images/image.jpg"
+            src="/images/sa.jpg"
             alt="Andrew Federico"
             className="w-full rounded-xl shadow-lg"
           />

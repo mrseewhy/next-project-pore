@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import HeroSection from "@/components/HeroSection";
+// import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/components/Hero2";
 import TheyTrustUs from "@/components/TheyTrustUs";
 import { Users, Gavel, HandHelping, Mail } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +11,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Hero3 from "@/components/Hero3";
 
 const testimonials = [
   {
@@ -93,7 +95,8 @@ const page = () => {
   }, []);
   return (
     <div className="bg-indigo-50">
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <Hero3 />
       <TheyTrustUs />
 
       {/* Organisation Overview */}
